@@ -4,12 +4,32 @@ import styles from './Menu.scss';
 
 const Menu = () => {
   return (
-    <div className={styles.Menu}>
-      <div>
-          <div className>Icon</div>
-          <div>Change amount</div>
-      </div>
-    </div>
+    <ul className={styles.Menu}>
+      <li>
+        <button>
+          <div className>&</div>
+          Change amount
+        </button>
+      </li>
+      <li>
+        <button>
+          <div className>&</div>
+          Change payment method
+        </button>
+      </li>
+      <li>
+        <button>
+          <div className>&</div>
+          Change date
+        </button>
+      </li>
+      <li>
+        <button>
+          <div className>&</div>
+          Cancel recurring
+        </button>
+      </li>
+    </ul>
   )
 };
 
