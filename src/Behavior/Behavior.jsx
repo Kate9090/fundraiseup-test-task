@@ -15,7 +15,7 @@ const Behavior = () => {
         <div className={styles.Behavior__InputGroup}>
           <label className={styles.Behavior__Label}>Goal</label>
           <div className={styles.Behavior__Row}>
-            <input value={'10.00'}/>
+            <input value={'10.00'} className={styles.Behavior__Amount}/>
             <select>
               <option>USD</option>
             </select>
@@ -47,7 +47,7 @@ const Behavior = () => {
           <label className={styles.Behavior__Label}>Border size</label>
           <div>
             <input type="range" id="volume1" name="volume"
-                  min="0" max="4" />
+                  min="0" max="25" value="15" />
             <label for="volume1">2px</label>
           </div>
         </div>
@@ -55,15 +55,10 @@ const Behavior = () => {
           <label className={styles.Behavior__Label}>Border radius</label>
           <div>
             <input type="range" id="volume2" name="volume2"
-                  min="0" max="30" />
+                  min="0" max="25" />
             <label for="volume2">15px</label>
           </div>
         </div>
-
-      <footer>
-        <button>Save changes</button>
-        <button>Cancel</button>
-      </footer>
       </form>
     </>
   )

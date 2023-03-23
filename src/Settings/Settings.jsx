@@ -51,6 +51,11 @@ const Settings = () => {
       </ul>
       
       {getTabContent(activeTab)}
+
+      <div className={styles.Settings__Actions}>
+        <button>Save changes</button>
+        <button>Cancel</button>
+      </div>
     </section>
   )
 };
