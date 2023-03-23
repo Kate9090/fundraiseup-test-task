@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
 import Behavior from '../Behavior/Behavior';
-import Tab from '../Tab/Tab';
 
-import styles from './Settings.scss';
+import styles from './Settings.module.scss';
 
 const TABS = [
   {
@@ -39,9 +38,9 @@ const Settings = () => {
   const getTabContent = (tab) => {
     return TABS.find(tabObj => tabObj.id === tab)?.content;
   }
-  
+
   return (
-      <>
+      <section className={styles.Settings}>
         <ul>
           {TABS?.map(li => (
             <li key={li.name}>
@@ -51,7 +50,7 @@ const Settings = () => {
         </ul>
         
         {getTabContent(activeTab)}
-      </>
+      </section>
   )
 };
 

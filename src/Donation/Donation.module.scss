@@ -1,0 +1,21 @@
+.Donation {
+   margin-bottom: 24px;
+   background: #FFFFFF;
+	border: 1px solid #DBDCDE;
+
+	box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
+   border-radius: 8px;
+   
+   &__InfoWrapper {
+      display: flex;
+		padding: 16px 16px 16px 32px;
+
+		background-color: #FAFAFA;
+		border-top: 1px solid #DBDCDE;
+   }
+
+   &__AmountWrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+}
