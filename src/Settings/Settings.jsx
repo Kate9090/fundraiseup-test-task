@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Behavior from '../Behavior/Behavior';
+import cx from 'classnames';
 
 import styles from './Settings.module.scss';
 
@@ -40,17 +41,17 @@ const Settings = () => {
   }
 
   return (
-      <section className={styles.Settings}>
-        <ul>
-          {TABS?.map(li => (
-            <li key={li.name}>
-              <button onClick={() => setActiveTab(li.id)}>{li.name}</button>
-            </li>
-        ))}
-        </ul>
-        
-        {getTabContent(activeTab)}
-      </section>
+    <section className={styles.Settings}>
+      <ul className={styles.Settings__Tabs}>
+        {TABS?.map(li => (
+          <li key={li.name} className={cx(li.id === activeTab && styles['Settings__Tab--active'], styles.Settings__Tab)}>
+            <button onClick={() => setActiveTab(li.id)}>{li.name}</button>
+          </li>
+      ))}
+      </ul>
+      
+      {getTabContent(activeTab)}
+    </section>
   )
 };
 

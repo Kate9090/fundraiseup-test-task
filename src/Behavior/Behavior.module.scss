@@ -1,0 +1,25 @@
+.Behavior {
+	margin: 40px 32px 0;
+	&__InputGroup {
+		display: flex;
+		margin-left: 20px;
+	}
+
+	&__Column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__Row {
+		display: flex;
+	}
+
+
+
+	&__Label {
+		margin-right: 16px;
+		display: inline-block;
+		width: 124px;
+		text-align: right;
+	}
+}

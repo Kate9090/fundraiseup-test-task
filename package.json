@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "react-cx": "^0.1.12",
     "sass": "^1.59.3"
   }
 }

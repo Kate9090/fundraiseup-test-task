@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 100%;
+  min-height: 100vh;
   overflow: hidden;
 
   background-color: #f3f2f2;
@@ -16,5 +16,19 @@
 
     margin: 53px auto 0;
     width: 80%;
+  }
+
+  &__Wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__Menu {
+    margin-left: 24px;
+    width: 264px;
+  }
+
+  &__Content {
+    flex-grow: 1;
   }
 }

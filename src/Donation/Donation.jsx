@@ -23,9 +23,18 @@ const Donation = () => {
       </div>
         
         <div className={styles.Donation__InfoWrapper}>
-          <div>Status</div>
-          <div>Supporter</div>
-          <div>Campaign</div>
+          <div>
+            <div className={styles.Donation__Label}>Status</div>
+            <div className={styles.Donation__Status}>Succeeded</div>
+          </div>
+          <div>
+            <div className={styles.Donation__Label}>Supporter</div>
+            <a href='' _target='blank'>Charlotte Ann</a>
+          </div>
+          <div>
+            <div className={styles.Donation__Label}>Campaign</div>
+            <a href='' _target='blank'>Heart walk</a>
+          </div>
         </div>
     </section>
   )

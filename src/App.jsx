@@ -10,11 +10,16 @@ const App = () => {
     <div className={styles.App}>
       <main>
         <Header />
-        <Menu />
-        <Donation />
-        <Settings />
+        <div className={styles.App__Wrapper}>
+          <div className={styles.App__Content}>
+            <Donation />
+            <Settings />
+          </div>
+          <div className={styles.App__Menu}> 
+            <Menu />
+          </div>
+        </div>
       </main>
-      
     </div>
   );
 }

@@ -4,4 +4,20 @@
 
 	box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
 	border-radius: 8px;
+
+	&__Tabs {
+		display: flex;
+	}
+
+	&__Tab {
+		button {
+			border: none;
+			background-color: none;
+		}
+		
+
+		&--active {
+			border-bottom: 1px solid green;
+		}
+	}
 }
