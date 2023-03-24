@@ -1,5 +1,6 @@
 import React from 'react';
 
+import cx from 'classnames';
 import styles from './Menu.module.scss';
 
 const Amount = () => (
@@ -69,7 +70,7 @@ const Menu = () => {
           Change payment method
         </button>
       </li>
-      <li className={styles.Menu__ItemWrapper}>
+      <li className={cx(styles.Menu__ItemWrapper, styles['Menu__ItemWrapper--active'])}>
         <button className={styles.Menu__Item}>
           <span className={styles.Menu__Icon}>
             <Calendar />
