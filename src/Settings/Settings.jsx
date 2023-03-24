@@ -53,8 +53,8 @@ const Settings = () => {
       {getTabContent(activeTab)}
 
       <div className={styles.Settings__Actions}>
-        <button>Save changes</button>
-        <button>Cancel</button>
+        <button className={cx(styles.Settings__Button, styles['Settings__Button--save'])}>Save changes</button>
+        <button className={styles.Settings__Button}>Cancel</button>
       </div>
     </section>
   )

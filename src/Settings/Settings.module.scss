@@ -60,5 +60,32 @@
 		padding: 24px 32px;
 
 		background-color: #FFFBEC;
+		border-top: 1px solid #DBDCDE;
+	}
+
+	&__Button {
+		padding: 12px 24px;
+
+		color: #2F2F30;
+		font-family: 'Work Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+
+		text-align: center;
+
+		background: #FFFFFF;
+
+		border: 1px solid #A9ABAE;
+		border-radius: 8px;
+
+		&--save {
+			margin-right: 1rem;
+			border-radius: 6px;
+			border-color: #2EB670;
+			background: #2EB670;
+			color: #ffffff;
+		}
 	}
 }

@@ -11,10 +11,15 @@ const Arrow = () => (
 )
 
 const Behavior = () => {
+  const [border, setBorder] = useState(2);
   const [radius, setRadius] = useState(15);
 
   const handleChangeRadius = (e) => {
     setRadius(Math.trunc(e.target.value));
+  }
+
+  const handleChangeBorder = (e) => {
+    setBorder(Math.trunc(e.target.value));
   }
   return (
     <>
@@ -33,8 +38,14 @@ const Behavior = () => {
         <div className={styles.Behavior__InputGroup}>
           <label className={styles.Behavior__Label}>Goal</label>
           <div className={styles.Behavior__Row}>
-            <input value={'10.00'} className={styles.Behavior__Amount}/>
-            <div className={styles.Behavior__SelectWrapper}>
+            <div className={styles.Behavior__InputWrapper}>
+              <span  className={styles.Behavior__Icon}>
+                $
+              </span>
+              <input value={'10.00'} className={styles.Behavior__Amount}/>
+            </div>
+            
+            <div className={cx(styles.Behavior__SelectWrapper, styles['Behavior__SelectWrapper--currency'])}>
               <select className={styles.Behavior__Select}>
                 <option>USD</option>
               </select>
@@ -65,23 +76,23 @@ const Behavior = () => {
             <div className={styles.Behavior__Row}>
               <input type="checkbox"
                 name="contact" value="phone" />
-              <label>Allow donor to change default currency</label>
+              <label className={styles.Behavior__CheckboxLabel}>Allow donor to change default currency</label>
             </div>
           </div>
         </div>
         <div className={styles.Behavior__InputGroup}>
           <label className={styles.Behavior__Label}>Border size</label>
-          <div>
+          <div className={styles.Behavior__SliderWrapper}>
             <input type="range" id="volume1" name="volume"
-                  min="0" max="25" value="15" />
-            <label for="volume1">2px</label>
+                  min="-1" max="4" value={border} onChange={e => handleChangeBorder(e)} />
+            <label for="volume1">{border}px</label>
           </div>
         </div>
         <div className={styles.Behavior__InputGroup}>
           <label className={styles.Behavior__Label}>Border radius</label>
-          <div>
+          <div className={styles.Behavior__SliderWrapper}>
             <input type="range" id="volume2" name="volume2"
-                  min="0" max="25" onChange={e => handleChangeRadius(e)}/>
+                  min="0" max="25" value={radius} onChange={e => handleChangeRadius(e)} />
             <label for="volume2">{radius}px</label>
           </div>
         </div>

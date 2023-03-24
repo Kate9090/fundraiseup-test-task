@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("/src/fonts/WorkSans-Regular.ttf");
+ }
+
 body {
   margin: 0;
   font-family: 'Work Sans', sans-serif;
@@ -36,8 +41,8 @@ input[type="range"] {
 
 input[type="range"] {
 	color: #2EB670;
-	--thumb-height: 1.125em;
-	--track-height: 0.125em;
+	--thumb-height: 19px;
+	--track-height: 3px;
 	--track-color: #DBDCDE;
 	--brightness-hover: 180%;
 	--brightness-down: 80%;
@@ -47,7 +52,7 @@ input[type="range"] {
 input[type="range"].win10-thumb {
 	color: #2EB670;
 
-	--thumb-height: 1.375em;
+	--thumb-height: 19px;
 	--thumb-width: 0.5em;
 	--clip-edges: 0.0125em;
 }
@@ -247,9 +252,8 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   content: "";
   top: 8px;
-  left: 8px;
-  width: 12px;
+  left: 6px;
+  width: 16px;
   height: 12px;
-  border-radius: 50%;
-  background-color: #2EB670;
+  background-image: url('assets/icons/check.svg');
 }
