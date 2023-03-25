@@ -1,12 +1,11 @@
 .App {
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 100vh;
-  overflow: hidden;
 
   background-color: #f3f2f2;
-
 
   main {
     display: flex;
@@ -14,7 +13,7 @@
     flex: 1;
     height: 100%;
 
-    margin: 53px auto 53px;
+    margin: 53px auto;
     width: 80%;
   }
 
@@ -24,11 +23,30 @@
   }
 
   &__Menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16px;
     margin-left: 24px;
     width: 264px;
   }
 
   &__Content {
     flex-grow: 1;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    &__Content {
+      width: calc(100% - 264px - 24px);
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    &__Content {
+      width: calc(100% - 56px - 24px);
+    }
+
+    &__Menu {
+      width: 56px;
+    }
   }
 }

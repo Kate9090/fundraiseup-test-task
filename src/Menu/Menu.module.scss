@@ -33,6 +33,12 @@
     align-items: center;
   }
 
+  @media only screen and (max-width: 990px) {
+    &__Text {
+      display: none;
+    }
+  }
+
 }
 
 .Sprite {

@@ -52,9 +52,10 @@
    }
 
    &__IdValue {
+      margin-left: 8px;
       display: flex;
       align-items: center;
-      font-family: 'Source Code Pro', sans-serif;
+      font-family: 'Code Pro', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -98,6 +99,10 @@
       display: flex;
       align-items: center;
       color: #00A651;
+
+      & > span {
+         margin-right: 8px;
+      }
    }
 
    a {
@@ -109,4 +114,32 @@
 
       color: #6665DD;
    }
+
+   @media only screen and (max-width: 748px) {
+      &__AmountWrapper {
+         flex-direction: column;
+
+         & > div:nth-child(2) {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+         }
+      }
+
+      &__InfoWrapper {
+         flex-direction: column;
+      }
+
+      &__InfoColumn {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         border: none;
+
+         &:not(:last-child) {
+            padding-bottom: 2px;
+         }
+      }
+    }
 }

@@ -8,7 +8,6 @@
 
 	h1 {
 		margin: 28px 28px 28px 42px;
-		font-family: 'Work Sans', sans-serif;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 24px;
@@ -46,7 +45,19 @@
 	}
 
 	select {
+		height: 40px;
 		border: none;
 		background-color: transparent;
+	}
+
+	@media only screen and (max-width: 550px) {
+		&__Search {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__InputWrapper {
+			margin-bottom: 16px;
+		}
 	}
 }

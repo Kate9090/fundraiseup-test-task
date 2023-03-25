@@ -1,7 +1,12 @@
 @font-face {
   font-family: "Work Sans";
-  src: url("/src/fonts/WorkSans-Regular.ttf");
- }
+  src: url("/src/fonts/WorkSans/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Code Pro";
+  src: url("/src/fonts/CodePro/SourceCodePro-VariableFont_wght.ttf");
+}
 
 body {
   margin: 0;
@@ -15,7 +20,12 @@ code {
     monospace;
 }
 
+select, input, button, label {
+  font-family: inherit;
+}
+
 ul {
+  font-family: inherit;
   margin: 0;
   padding: 0;
   list-style: none;

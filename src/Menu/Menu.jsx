@@ -59,7 +59,7 @@ const Menu = () => {
             {/* <svg><use href={"repeat"}></use></svg> */}
             <Amount />
           </span>
-          Change amount
+          <p className={styles.Menu__Text}>Change amount</p>
         </button>
       </li>
       <li className={styles.Menu__ItemWrapper}>
@@ -67,7 +67,7 @@ const Menu = () => {
           <span className={styles.Menu__Icon}>
             <Payment />
           </span>
-          Change payment method
+          <p className={styles.Menu__Text}>Change payment method</p>
         </button>
       </li>
       <li className={cx(styles.Menu__ItemWrapper, styles['Menu__ItemWrapper--active'])}>
@@ -75,7 +75,7 @@ const Menu = () => {
           <span className={styles.Menu__Icon}>
             <Calendar />
           </span>
-          Change date
+          <p className={styles.Menu__Text}>Change date</p>
         </button>
       </li>
       <li className={styles.Menu__ItemWrapper}>
@@ -83,7 +83,7 @@ const Menu = () => {
           <span className={styles.Menu__Icon}>
             <Cancel />
           </span>
-          Cancel recurring
+          <p className={styles.Menu__Text}>Cancel recurring</p>
         </button>
       </li>
     </ul>
