@@ -44,10 +44,6 @@ input[type="range"] {
    width: 218px;
    writing-mode: bt-lr;
 }
-input[type="range"] {
-	font-size: 1.5rem;
-	width: 12.5em;
-}
 
 input[type="range"] {
 	color: #2EB670;

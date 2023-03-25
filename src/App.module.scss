@@ -14,7 +14,7 @@
     height: 100%;
 
     margin: 53px auto;
-    width: 80%;
+    width: 76.5rem;
   }
 
   &__Wrapper {
@@ -34,6 +34,12 @@
     flex-grow: 1;
   }
 
+  @media only screen and (max-width: 1399px) {
+    main {
+      width: 76.5%;
+    }
+  }
+
   @media only screen and (max-width: 1200px) {
     &__Content {
       width: calc(100% - 264px - 24px);
@@ -47,6 +53,17 @@
 
     &__Menu {
       width: 56px;
+    }
+  }
+
+  @media only screen and (max-width: 748px) {
+    
+    min-width: 444px;
+    overflow: scroll;
+    box-sizing: border-box;
+
+    main {
+      width: 100%;
     }
   }
 }

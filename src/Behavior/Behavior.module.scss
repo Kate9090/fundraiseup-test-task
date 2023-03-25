@@ -1,5 +1,6 @@
 .Behavior {
 	margin: 2.5rem 2rem 0;
+
 	&__InputGroup {
 		display: flex;
 		align-items: center;
@@ -20,6 +21,7 @@
 	&__Icon {
 		position: absolute;
 		left: 1rem;
+		top: 11px;
 	}
 
 	&__Column {
@@ -112,6 +114,7 @@
 	}
 
 	&__SliderWrapper {
+		position: relative;
 		display: flex;
 		align-items: center;
 
@@ -126,11 +129,15 @@
 
 			color: #2F2F30;
 		}
+
+		&__InputRange {
+			width: 218px;
+		}
 	}
 
 	@media only screen and (max-width: 990px) {
 		&__InputGroup {
-			margin-left: 3rem;
+			margin-left: 2rem;
 			flex-direction: column;
 			align-items: flex-start;
 		}
@@ -139,6 +146,10 @@
 			margin-top: 0.5rem;
 			margin-bottom: 0.5rem;
 			text-align: left;
+		}
+
+		&__Form {
+			padding: 0 1rem;
 		}
 
 		// & label {
@@ -151,5 +162,47 @@
 		// & input[type='range'] {
 		// 	width: 80%;
 		// }
+	}
+
+	@media only screen and (max-width: 748px) {
+		&__InputGroup {
+			margin-left: 1rem;
+		}
+
+		&__InputWrapper {
+			width: 100%;
+		}
+
+		&__Amount {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 16px;
+		}
+
+		&__SelectWrapper {
+			width: 100%;
+
+			&--currency {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+
+		&__Wide {
+			width: 100%;
+		}
+
+		&__Goal {
+			width: 100%;
+			flex-direction: column;
+		}
+	}
+
+	@media only screen and (max-width: 550px) {
+		&__RangeValue {
+			position: absolute;
+			top: -2rem;
+			right: 0;
+		}
 	}
 }
