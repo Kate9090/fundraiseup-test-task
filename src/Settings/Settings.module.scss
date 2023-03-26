@@ -30,12 +30,13 @@
 	}
 
 	&__Tab {
-		padding: 13px 16px 12px;
+		padding: 13px 15px 12px;
 		text-transform: uppercase;
 		color: #2F2F30;
 
 		&:not(:first-child) {
-			padding-right: 17px;
+			padding-right: 16px;
+			padding-left: 17px;
 		}
 
 		button {
@@ -75,7 +76,6 @@
 
 	&__Actions {
 		display: flex;
-		// margin-top: auto;
 		padding: 23px 32px;
 
 		background-color: #FFFBEC;

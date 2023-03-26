@@ -224,8 +224,8 @@ input[type="radio"]:checked::before {
 input[type="radio"]:checked::after {
   position: absolute;
   content: "";
-  top: 8px;
-  left: 8px;
+  top: 6px;
+  left: 6px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -260,8 +260,8 @@ input[type="checkbox"]:checked::before {
 input[type="checkbox"]:checked::after {
   position: absolute;
   content: "";
-  top: 8px;
-  left: 6px;
+  top: 6px;
+  left: 4px;
   width: 16px;
   height: 12px;
   background-image: url('assets/icons/check.svg');

@@ -13,6 +13,7 @@ const Arrow = () => (
 const Behavior = () => {
   const [border, setBorder] = useState(2);
   const [radius, setRadius] = useState(15);
+  const [checked, setCheck] = useState(true);
 
   const handleChangeRadius = (e) => {
     setRadius(Math.trunc(e.target.value));
@@ -21,6 +22,11 @@ const Behavior = () => {
   const handleChangeBorder = (e) => {
     setBorder(Math.trunc(e.target.value));
   }
+
+  const handleChangeCheck = () => {
+    setCheck(prev => !prev);
+  }
+
   return (
     <form className={styles.Behavior__Form}>
       <div className={styles.Behavior__InputGroup}>
@@ -41,7 +47,7 @@ const Behavior = () => {
             <span  className={styles.Behavior__Icon}>
               $
             </span>
-            <input value={'10.00'} className={styles.Behavior__Amount}/>
+            <input defaultValue={'10.00'} className={styles.Behavior__Amount}/>
           </div>
           
           <div className={cx(styles.Behavior__SelectWrapper, styles['Behavior__SelectWrapper--currency'])}>
@@ -59,22 +65,22 @@ const Behavior = () => {
         <label className={styles.Behavior__Label}>Default Amount</label>
         <div className={styles.Behavior__Column}>
           <div className={cx(styles.Behavior__Row, styles.Behavior__WithBottom)}>
-            <input type="radio" id="contactChoice1"
-              name="contact" value="email" />
-            <label for="contactChoice1" className={styles.Behavior__RadioLabel}>
+            <input type="radio" id="choice1"
+              name="choice" value="Checkout" />
+            <label for="choice1" className={styles.Behavior__RadioLabel}>
               Match Checkout Setting
             </label>
           </div>
 
           <div className={cx(styles.Behavior__Row, styles.Behavior__WithBottom)}>
-            <input type="radio" id="contactChoice2"
-              name="contact" value="phone" />
-            <label for="contactChoice2" className={styles.Behavior__RadioLabel}>Customize</label>
+            <input type="radio" id="choice2" defaultChecked={true}
+              name="choice" value="Customize" />
+            <label for="choice2" className={styles.Behavior__RadioLabel}>Customize</label>
           </div>
 
           <div className={styles.Behavior__Row}>
-            <input type="checkbox"
-              name="contact" value="phone" />
+            <input type="checkbox" checked={checked} onChange={handleChangeCheck}
+              name="Allow" value="Allow" />
             <label className={styles.Behavior__CheckboxLabel}>Allow donor to change default currency</label>
           </div>
         </div>
@@ -83,7 +89,7 @@ const Behavior = () => {
         <label className={styles.Behavior__Label}>Border size</label>
         <div className={styles.Behavior__SliderWrapper}>
           <input type="range" id="volume1" name="volume"
-                min="-1" max="4" value={border} onChange={e => handleChangeBorder(e)} />
+                min="-1" max="3.6" value={border} onChange={e => handleChangeBorder(e)} />
           <label for="volume1" className={styles.Behavior__RangeValue}>{border}px</label>
         </div>
       </div>
@@ -91,7 +97,7 @@ const Behavior = () => {
         <label className={styles.Behavior__Label}>Border radius</label>
         <div className={styles.Behavior__SliderWrapper}>
           <input type="range" id="volume2" name="volume2"
-                min="0" max="25" value={radius} onChange={e => handleChangeRadius(e)} 
+                min="0" max="23" value={radius} onChange={e => handleChangeRadius(e)} 
                 className={styles.Behavior__InputRange} />
           <label for="volume2" className={styles.Behavior__RangeValue}>{radius}px</label>
         </div>
