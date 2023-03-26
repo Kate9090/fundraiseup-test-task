@@ -58,13 +58,21 @@
   }
 
   @media only screen and (max-width: 748px) {
-    
-    min-width: 444px;
-    overflow: scroll;
-    box-sizing: border-box;
-
     main {
       width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 445px) {
+    min-width: 444px;
+    overflow-x: scroll;
+    box-sizing: border-box;
+
+    &__Menu {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 5;
     }
   }
 }

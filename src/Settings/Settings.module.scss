@@ -1,7 +1,7 @@
 .Settings {
 	display: flex;
 	flex-direction: column;
-	min-height: 598px;
+	
 	background: #FFFFFF;
 	border: 1px solid #DBDCDE;
 
@@ -147,4 +147,8 @@
 .Section {
 	margin: auto;
 	padding: 24px;
+	display: flex;
+	align-items: center;
+
+	min-height: 380px;
 }

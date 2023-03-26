@@ -27,10 +27,10 @@ const Donation = () => {
     <section className={styles.Donation}>
       <div className={styles.Donation__AmountWrapper}>
         <div className={styles.Donation__AmountBlock}>
-          <h5 className={styles.Donation__SubTitle}>
+          <h2 className={styles.Donation__SubTitle}>
             <span className={styles.Donation__Currency}><Dollar /></span>
             Donation
-          </h5>
+          </h2>
           <div className={styles.Donation__Amount}>
             $20.60 USD
             <span className={styles.Donation__AmountInOtherCurrecy}>≈ €17.92 EUR</span>

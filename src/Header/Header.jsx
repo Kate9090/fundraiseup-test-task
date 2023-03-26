@@ -10,7 +10,7 @@ const Arrow = () => (
 
 const Header = () => {
   return (
-    <div className={styles.Header}>
+    <header className={styles.Header}>
       <h1>Donations</h1>
       <div className={styles.Header__Search}>
         <div className={styles.Header__InputWrapper}>
@@ -33,7 +33,7 @@ const Header = () => {
           </span>
         </div>
       </div>
-    </div>
+    </header>
   )
 };
 
