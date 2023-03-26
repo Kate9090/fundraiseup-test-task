@@ -25,6 +25,7 @@
   &__Menu {
     position: -webkit-sticky;
     position: sticky;
+    align-self: flex-start;
     top: 16px;
     margin-left: 24px;
     width: 264px;
