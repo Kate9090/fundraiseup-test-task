@@ -14,21 +14,21 @@ const TABS = [
   {
     id: 1,
     name: 'Appearance',
-    content: <> Ups, there is no content here for tab Appearance</>,
+    content: <section className={styles.Section}> Ups, there is no content here for tab Appearance</section>,
   },
   {
     id: 2,
     name: 'Custom Fields',
-    content: <> Ups, there is no content here for tab Custom Fields</>,
+    content: <section className={styles.Section}> Ups, there is no content here for tab Custom Fields</section>,
   },
   {
     id: 3,
     name: 'Questions',
-    content: <> Ups, there is no content here for tab Questions</>,
+    content: <section className={styles.Section}> Ups, there is no content here for tab Questions</section>,
   },
   {
     name: 'URL Control',
-    content: <> Ups, there is no content here for tab URL Control</>,
+    content: <section className={styles.Section}> Ups, there is no content here for tab URL Control</section>,
   },
 ];
 

@@ -2,6 +2,12 @@ import React from 'react';
 
 import styles from './Header.module.scss';
 
+const Arrow = () => (
+  <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 0.75L5.5 5.25L10 0.75" stroke="#6C6D6F" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+)
+
 const Header = () => {
   return (
     <div className={styles.Header}>
@@ -16,11 +22,16 @@ const Header = () => {
           </span>
           <input placeholder={'Search'} type="text" />
         </div>
-        <select placeholder={'All statuses'}>
-          <option>All statuses</option>
-          <option>option 1</option>
-          <option>option 2</option>
-        </select>
+        <div className={styles.Header__SelectWrapper}>
+          <select placeholder={'All statuses'}>
+            <option>All statuses</option>
+            <option>option 1</option>
+            <option>option 2</option>
+          </select>
+          <span className={styles.Header__SelectArrow}>
+            <Arrow />
+          </span>
+        </div>
       </div>
     </div>
   )

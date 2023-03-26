@@ -5,9 +5,10 @@
 
 	box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
 	border-radius: 8px;
+	overflow: hidden;
 
 	h1 {
-		margin: 28px 28px 28px 42px;
+		margin: 28px 28px 28px 32px;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 24px;
@@ -18,7 +19,7 @@
 
 	&__Search {
 		display: flex;
-		padding: 16px 16px 16px 32px;
+		padding: 15px 16px 16px 32px;
 
 		background-color: #FAFAFA;
 		border-top: 1px solid #DBDCDE;
@@ -28,26 +29,54 @@
 		position: relative;
 		display: flex;
 		align-items: center;
+		width: 336px;
+		margin-right: 40px;
 	}
 
 	&__Icon {
 		position: absolute;
 		left: 16px;
+		top: 11px;
 	}
 
 	input {
+		width: 100%;
 		padding-left: 42px;
-		margin-right: 40px;
-		height: 40px;
+		height: 38px;
+
+		font-size: 16px;
+		line-height: 24px;
 
 		border: 1px solid #DBDCDE;
 		border-radius: 8px;
+
+		box-sizing: border-box;
+	}
+
+	&__SelectWrapper {
+		position: relative;
+	}
+
+	&__SelectArrow {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.625rem;
 	}
 
 	select {
-		height: 40px;
+		padding: 0.5rem 1.625rem 0.5rem 0;
+		height: 2.5rem;
 		border: none;
+
+		font-size: 1rem;
+		line-height: 1.5rem;
+
+		color: #2F2F30;
 		background-color: transparent;
+
+		-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 	}
 
 	@media only screen and (max-width: 550px) {
