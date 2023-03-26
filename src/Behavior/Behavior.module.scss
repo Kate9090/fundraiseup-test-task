@@ -8,7 +8,10 @@
 	&__InputGroup {
 		display: flex;
 		align-items: center;
-		margin-bottom: 1.5rem;
+
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
 	}
 
 	&__InputWrapper {
@@ -17,14 +20,14 @@
 		align-items: center;
 
 		& > input {
-			padding-left: 1.5rem;
+			padding-left: 1.25rem;
 		}
 	}
 
 	&__Icon {
 		position: absolute;
-		left: 1rem;
-		top: 11px;
+		left: 10px;
+		top: 10px;
 	}
 
 	&__Column {
@@ -38,6 +41,10 @@
 
 	&__WithBottom {
 		margin-bottom: 1rem;
+
+		&:nth-child(2) {
+			margin-bottom: 24px;
+		}
 	}
 
 	&__Label {
@@ -53,6 +60,10 @@
 
 		color: #2F2F30;
 
+	}
+
+	&__InputGroup:nth-child(3) &__Label {
+		align-self: flex-start;
 	}
 
 	&__SelectWrapper {
@@ -114,6 +125,10 @@
 		line-height: 1.5rem;
 
 		color: #2F2F30;
+	}
+
+	&__CheckboxLabel {
+		margin-bottom: 8px;
 	}
 
 	&__SliderWrapper {

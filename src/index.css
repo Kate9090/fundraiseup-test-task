@@ -214,6 +214,7 @@ input[type="radio"]::before {
   height: 24px;
   border-radius: 50%;
   border: 1px solid #A9ABAE;
+  box-sizing: border-box;
 }
 
 input[type="radio"]:checked::before {
@@ -249,6 +250,7 @@ input[type="checkbox"]::before {
   height: 24px;
   border-radius: 4px;
   border: 1px solid #A9ABAE;
+  box-sizing: border-box;
 }
 
 input[type="checkbox"]:checked::before {
