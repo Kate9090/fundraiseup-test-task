@@ -24,6 +24,10 @@ select, input, button, label {
   font-family: inherit;
 }
 
+select, a, button {
+	cursor: pointer;
+}
+
 ul {
   font-family: inherit;
   margin: 0;
