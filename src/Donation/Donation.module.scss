@@ -157,9 +157,9 @@
       }
 
       &__InfoWrapper {
-         flex-direction: column;
-
-         overflow-x: inherit;
+        flex-direction: column;
+				padding: 15px 0;
+        overflow-x: inherit;
       }
 
       &__InfoColumn {
