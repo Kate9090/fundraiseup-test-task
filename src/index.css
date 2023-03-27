@@ -15,6 +15,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  --green: #2EB670;
+  --ligth-gray: #DBDCDE;
+  --dark-gray: #6C6D6F;
+  --text:  #2F2F30;
+  --purple: #6665DD;
+  --blue: #009FFD;
+  --border: #A9ABAE;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

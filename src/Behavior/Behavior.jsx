@@ -30,9 +30,9 @@ const Behavior = () => {
   return (
     <form className={styles.Behavior__Form}>
       <fieldset className={styles.Behavior__InputGroup}>
-        <label className={styles.Behavior__Label}>Designation</label>
+        <label for="setting" className={styles.Behavior__Label}>Designation</label>
         <div className={styles.Behavior__SelectWrapper}>
-          <select className={cx(styles.Behavior__Select, styles.Behavior__Wide)}>
+          <select id="setting" className={cx(styles.Behavior__Select, styles.Behavior__Wide)}>
             <option>Match Checkout Setting</option>
           </select>
           <span className={styles.Behavior__SelectArrow}>
@@ -41,13 +41,13 @@ const Behavior = () => {
         </div>
       </fieldset>
       <fieldset className={styles.Behavior__InputGroup}>
-        <label className={styles.Behavior__Label}>Goal</label>
+        <label for="currency" className={styles.Behavior__Label}>Goal</label>
         <div className={cx(styles.Behavior__Row, styles.Behavior__Goal)}>
           <div className={styles.Behavior__InputWrapper}>
             <span  className={styles.Behavior__Icon}>
               $
             </span>
-            <input defaultValue={'10.00'} className={styles.Behavior__Amount}/>
+            <input type="text" id="currency" defaultValue={'10.00'} className={styles.Behavior__Amount}/>
           </div>
           
           <div className={cx(styles.Behavior__SelectWrapper, styles['Behavior__SelectWrapper--currency'])}>
@@ -86,20 +86,20 @@ const Behavior = () => {
         </div>
       </fieldset>
       <fieldset className={styles.Behavior__InputGroup}>
-        <label className={styles.Behavior__Label}>Border size</label>
+        <label for="border" className={styles.Behavior__Label}>Border size</label>
         <div className={styles.Behavior__SliderWrapper}>
-          <input type="range" id="volume1" name="volume"
+          <input type="range" id="border" name="volume"
                 min="-1" max="3.6" value={border} onChange={e => handleChangeBorder(e)} />
-          <label for="volume1" className={styles.Behavior__RangeValue}>{border}px</label>
+          <label className={styles.Behavior__RangeValue}>{border}px</label>
         </div>
       </fieldset>
       <fieldset className={styles.Behavior__InputGroup}>
-        <label className={styles.Behavior__Label}>Border radius</label>
+        <label for="radius" className={styles.Behavior__Label}>Border radius</label>
         <div className={styles.Behavior__SliderWrapper}>
-          <input type="range" id="volume2" name="volume2"
+          <input type="range" id="radius" name="volume2"
                 min="0" max="23" value={radius} onChange={e => handleChangeRadius(e)} 
                 className={styles.Behavior__InputRange} />
-          <label for="volume2" className={styles.Behavior__RangeValue}>{radius}px</label>
+          <label className={styles.Behavior__RangeValue}>{radius}px</label>
         </div>
       </fieldset>
     </form>

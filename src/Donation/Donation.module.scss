@@ -1,7 +1,7 @@
 .Donation {
    margin-bottom: 24px;
 
-   color: #2F2F30;
+   color: var(--text);
 
    background: #FFFFFF;
 	border: 1px solid #DBDCDE;
@@ -15,7 +15,7 @@
       margin-right: 8px;
       width: 18px;
       height: 18px;
-      color: #009FFD;
+      color: var(--blue);
    }
 
    &__SubTitle {
@@ -42,7 +42,7 @@
       font-size: 16px;
       line-height: 24px;
 
-      color: #6C6D6F;
+      color: var(--dark-gray);
    }
 
    &__Id {
@@ -64,7 +64,7 @@
       font-size: 16px;
       line-height: 24px;
 
-      color: #2F2F30;
+      color: var(--text);
 
       & > span {
          margin-left: 8px;
@@ -100,7 +100,7 @@
       font-size: 14px;
       line-height: 20px;
 
-      color: #6C6D6F;
+      color: var(--dark-gray);
    }
 
    &__InfoColumn:first-child &__Label {
@@ -125,7 +125,7 @@
 
       text-decoration-line: underline;
 
-      color: #6665DD;
+      color: var(--purple);
    }
 
    @media only screen and (max-width: 748px) {
@@ -153,10 +153,15 @@
       }
 
       &__InfoColumn {
+         padding: 0 32px;
          display: flex;
          align-items: center;
          justify-content: space-between;
          border: none;
+
+         &:not(:first-child) {
+            border: none;
+         }
 
          &:not(:last-child) {
             padding-bottom: 2px;

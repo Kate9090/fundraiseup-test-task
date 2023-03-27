@@ -20,7 +20,7 @@ const Header = () => {
               <path d="M15.7499 15.7499L12.4874 12.4874" stroke="#6C6D6F" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </span>
-          <input placeholder={'Search'} type="text" />
+          <input placeholder={'Search'} type="search" autoFocus/>
         </div>
         <div className={styles.Header__SelectWrapper}>
           <select placeholder={'All statuses'}>
