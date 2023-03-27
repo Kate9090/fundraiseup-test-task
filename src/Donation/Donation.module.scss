@@ -77,7 +77,9 @@
 		padding: 15px 16px 15px 0;
 
 		background-color: #FAFAFA;
-		border-top: 1px solid #DBDCDE;
+      border-top: 1px solid #DBDCDE;
+      
+      overflow-x: auto;
    }
 
    &__AmountWrapper {
@@ -119,6 +121,8 @@
    }
 
    a {
+      padding-left: 16px;
+
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
@@ -126,6 +130,10 @@
       text-decoration-line: underline;
 
       color: var(--purple);
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
    }
 
    @media only screen and (max-width: 748px) {
@@ -150,6 +158,8 @@
 
       &__InfoWrapper {
          flex-direction: column;
+
+         overflow-x: inherit;
       }
 
       &__InfoColumn {

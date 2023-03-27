@@ -34,6 +34,8 @@
 		text-transform: uppercase;
 		color: #2F2F30;
 
+		border-bottom: 1px solid var(--ligth-gray);
+
 		&:not(:first-child) {
 			padding-right: 16px;
 			padding-left: 17px;

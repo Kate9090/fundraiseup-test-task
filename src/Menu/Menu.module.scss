@@ -73,6 +73,8 @@
       color: #fff;
       transition: 0.2s;
       z-index: 4;
+
+      pointer-events: none;
     }
 
     &__ItemWrapper:hover &__Text { 
@@ -89,16 +91,12 @@
 
 @keyframes showMenu {
   from {
-    // display: none;
     opacity: 0;
-    // width: 0;
-    // scale: 0;
+    scale: 0;
   }
   to {
-    // display: block;
-    // width: 100%;
     opacity: 1;
-    // scale: 1;
+    scale: 1;
   }
 }
 

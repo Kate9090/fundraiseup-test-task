@@ -34,6 +34,12 @@ select, input, button, label {
   font-family: inherit;
 }
 
+select , button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 select, a, button {
 	cursor: pointer;
 }
