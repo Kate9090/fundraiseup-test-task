@@ -4,6 +4,8 @@ import cx from 'classnames';
 
 import styles from './Behavior.module.scss';
 
+const NUMBER_INPUT_PATTERN = /^(?![.])(([1-9]\d*)|([0]{1}))?(\.\d{0,2})?$/;
+
 const Arrow = () => (
   <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M1 0.75L5.5 5.25L10 0.75" stroke="#6C6D6F" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,6 +16,7 @@ const Behavior = () => {
   const [border, setBorder] = useState(2);
   const [radius, setRadius] = useState(15);
   const [checked, setCheck] = useState(true);
+  const [currency, setCurrency] = useState('10.00');
 
   const handleChangeRadius = (e) => {
     setRadius(Math.trunc(e.target.value));
@@ -25,6 +28,13 @@ const Behavior = () => {
 
   const handleChangeCheck = () => {
     setCheck(prev => !prev);
+  }
+
+  const handleChangeCurrency = e => {
+    if (!e.target.value.match(NUMBER_INPUT_PATTERN)) {
+      return ''
+    }
+    setCurrency(e.target.value)
   }
 
   return (
@@ -47,7 +57,7 @@ const Behavior = () => {
             <span  className={styles.Behavior__Icon}>
               $
             </span>
-            <input type="number" step="0.01" min="0" pattern="[0-9]+([\.][0-9]+)?" id="currency" defaultValue={'10.00'}
+            <input type="text" id="currency" value={currency} onChange={handleChangeCurrency}
               className={styles.Behavior__Amount}
             />
           </div>
