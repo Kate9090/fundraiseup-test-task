@@ -47,7 +47,7 @@ const Behavior = () => {
             <span  className={styles.Behavior__Icon}>
               $
             </span>
-            <input type="number" step="0.01" min="0" pattern="[0-9]+([\.,][0-9]+)?" id="currency" defaultValue={'10.00'}
+            <input type="number" step="0.01" min="0" pattern="[0-9]+([\.][0-9]+)?" id="currency" defaultValue={'10.00'}
               className={styles.Behavior__Amount}
             />
           </div>
