@@ -41,9 +41,11 @@ const Donation = () => {
           <div className={styles.Donation__Id}>ID</div>
           <div className={styles.Donation__IdValue}>
             TYNY694Y
-            <span>
+            <button type="button">
+              <span>
               <Copy />
-            </span>
+              </span>
+            </button>
           </div>
 
         </div>
