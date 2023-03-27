@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/fundraiseup-test-task/static/css/main.99142f1e.css",
-    "main.js": "/fundraiseup-test-task/static/js/main.8aef9b2f.js",
+    "main.js": "/fundraiseup-test-task/static/js/main.f7fcdace.js",
     "static/js/787.f42c70aa.chunk.js": "/fundraiseup-test-task/static/js/787.f42c70aa.chunk.js",
     "static/media/SourceCodePro-VariableFont_wght.ttf": "/fundraiseup-test-task/static/media/SourceCodePro-VariableFont_wght.9ef76af760ad69c7256d.ttf",
     "static/media/WorkSans-Regular.ttf": "/fundraiseup-test-task/static/media/WorkSans-Regular.ca211a55c3d9d8690c63.ttf",
     "index.html": "/fundraiseup-test-task/index.html",
     "static/media/check.svg": "/fundraiseup-test-task/static/media/check.b294d14f12b9a6cb281f.svg",
     "main.99142f1e.css.map": "/fundraiseup-test-task/static/css/main.99142f1e.css.map",
-    "main.8aef9b2f.js.map": "/fundraiseup-test-task/static/js/main.8aef9b2f.js.map",
+    "main.f7fcdace.js.map": "/fundraiseup-test-task/static/js/main.f7fcdace.js.map",
     "787.f42c70aa.chunk.js.map": "/fundraiseup-test-task/static/js/787.f42c70aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99142f1e.css",
-    "static/js/main.8aef9b2f.js"
+    "static/js/main.f7fcdace.js"
   ]
 }
